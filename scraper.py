@@ -11,5 +11,5 @@ class Scraper:
         heading = soup.find_all("div", class_ = "def-header")
         meaning = soup.find_all("div", class_ = "meaning")
         example = soup.find_all("div", class_ = "example")
-        result = [heading[0].get_text(), meaning[0].get_text(), example[0].get_text()]
+        result = [heading[0].get_text(), meaning, example]
         return result

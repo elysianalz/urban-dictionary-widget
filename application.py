@@ -6,5 +6,4 @@ def main():
         word = input("enter word for definition: ")
         d = dictionary.Dictionary(word)
         d.getDefinition()
-        #d.definition()
 main()

@@ -16,6 +16,9 @@ class Dictionary:
     def getDefinition(self):
         s = scraper.Scraper(self.word)
         res = s.getResponse()
+        # word searched
         print(res[0])
-        print(res[1])
-        print(res[2])
+        # meaning of word
+        print(res[1][0].get_text())
+        # example of use
+        print(res[2][0].get_text())
