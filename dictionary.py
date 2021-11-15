@@ -1,9 +1,16 @@
 import scraper
 
 class Dictionary:
+
     def __init__(self, word):
         self.word = word
-        self.definitions = ["placeholder definition"]
+        self.definitions = []
+
+    def setWord(self, word):
+        self.word = word
+
+    def getWord(self):
+        return self.word
 
     def printWord(self):
         print(self.word)
