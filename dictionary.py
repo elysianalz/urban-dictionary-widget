@@ -29,3 +29,4 @@ class Dictionary:
         print(res[1][0].get_text())
         # example of use
         print(res[2][0].get_text())
+        return res
