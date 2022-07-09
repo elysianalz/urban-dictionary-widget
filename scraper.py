@@ -8,7 +8,7 @@ class Scraper:
 
     def getResponse(self):
         soup = BeautifulSoup(self.search.text, 'html.parser')
-        heading = soup.find_all("div", class_ = "def-header")
+        heading = soup.find_all("a", class_ = "word")
         meaning = soup.find_all("div", class_ = "meaning")
         example = soup.find_all("div", class_ = "example")
         result = [heading[0].get_text(), meaning, example]

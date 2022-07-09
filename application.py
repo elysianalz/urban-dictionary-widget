@@ -1,7 +1,6 @@
 import dictionary
 import sys
-from PySide6.QtWidgets import (QLineEdit, QPushButton, QApplication,
-    QVBoxLayout, QDialog, QLabel)
+from PySide6.QtWidgets import (QLineEdit, QPushButton, QApplication, QVBoxLayout, QDialog, QLabel)
 
 class Application(QDialog):
     def __init__(self, parent = None):
